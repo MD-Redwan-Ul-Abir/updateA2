@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CssFile/home.css">
     <title>Document</title>
+
+    
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            
-            <div class="nav-items">
-                <li><a class="active" href="#about">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="galary.html">Gallery</a></li>
-                <li><a href="Home.html">Home</a></li>
-            </div>
-          </ul>
-    </div>
+    <p>Enter the first Number: <input id="first"></p>
+    <p>Enter the second Number: <input id="second"></p>
+    <button onclick="substraction()">Substraction</button>
+    <p>Result = <input id="answer"></p>
+
+
+
+
+
+
+    <script>
+        
+        function substraction(){
+            var numOne,numTwo,result;
+            numOne = parseInt(document.getElementById("first").value);
+            numTwo = parseInt(document.getElementById("second").value);
+            result = numOne-numTwo;
+            document.getElementById("answer").value=result;
+        }
+    </script>
 </body>
 </html>
